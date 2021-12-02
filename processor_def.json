@@ -1,0 +1,49 @@
+{
+    "dockerimage": "alistaire/ee-salman-v2:0.15", 
+    "inputs": [
+        {
+            "title": "Sentinel-1 product (zipped)", 
+            "args": [
+                "{input_file}"
+            ], 
+            "file": {
+                "mime_types": [
+                    "application/zip"
+                ], 
+                "max_size": 1000
+            }, 
+            "identifier": "input_file", 
+            "max_occurs": 1, 
+            "min_occurs": 1
+        }
+    ], 
+    "description": "Example processor demonstrating using an exported Tensorflow model trained on Hops for use on PolarTEP.", 
+    "outputs": [
+        {
+            "gs_publish": false,
+            "identifier": "zip_output_file",
+            "file": {
+                "pattern": "S1*_results.zip",
+                "mime_types": [
+                    "application/zip"
+                ],
+                "max_size": 3000
+            },
+            "title": "Zip result file"
+        },
+        {
+            "gs_publish": true,
+            "identifier": "f8bit_output_file",
+            "file": {
+                "pattern": "S1*_8bit.tif",
+                "mime_types": [
+                    "image/tiff"
+                ],
+                "max_size": 3000
+            },
+            "title": "8 bit result file"
+        }
+
+    ], 
+    "title": "ExtremeEarth - In memory "
+}

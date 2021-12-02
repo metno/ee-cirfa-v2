@@ -1,0 +1,7 @@
+loguru
+tensorflow
+tqdm
+numpy
+xarray
+requests
+rasterio
