@@ -53,8 +53,8 @@ def classify(feature_folder):
 
     rows, cols = HH.shape
     X, Y = np.meshgrid(
-        np.arange(0, cols-PATCH_SIZE, 5 * PATCH_SIZE),
-        np.arange(0, rows-PATCH_SIZE, 5 * PATCH_SIZE),
+        np.arange(0, cols-PATCH_SIZE, PATCH_SIZE),
+        np.arange(0, rows-PATCH_SIZE, PATCH_SIZE),
     )
 
     number_of_output_points = X.size
