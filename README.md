@@ -1,5 +1,14 @@
 # Example of using a model trained on Hops from the Polar TEP
 
+Output class labels are:
+
+    'No data': 0,
+    'Water': 1,
+    'Sea Ice': 2,
+    'Land': 3,
+
+
+
 # Creating the Docker container
 
 # Publishing the model
