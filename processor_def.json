@@ -1,5 +1,5 @@
 {
-    "dockerimage": "alistaire/ee-salman-v2:0.15", 
+    "dockerimage": "alistaire/ee-salman-v2:0.19", 
     "inputs": [
         {
             "title": "Sentinel-1 product (zipped)", 
@@ -30,18 +30,6 @@
                 "max_size": 3000
             },
             "title": "Zip result file"
-        },
-        {
-            "gs_publish": true,
-            "identifier": "f8bit_output_file",
-            "file": {
-                "pattern": "S1*_8bit.tif",
-                "mime_types": [
-                    "image/tiff"
-                ],
-                "max_size": 3000
-            },
-            "title": "8 bit result file"
         }
 
     ], 
